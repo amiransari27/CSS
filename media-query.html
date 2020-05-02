@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Media Query</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 50px 0px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .main {
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .left {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 1% 3%;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .right {
+            width: 50%;
+            padding: 0;
+            text-align: center;
+        }
+
+        .right img {
+            width: 450px;
+            box-sizing: border-box;
+        }
+
+        /* Media queries */
+        /* Desktop and laptop */
+        @media(min-width: 1024px){
+            h1{
+                color: rebeccapurple;
+            }
+        }
+
+        /* Tablets and Ipads  */
+
+        @media (min-width: 769px) and (max-width: 1023px){
+            h1{
+                color: salmon;
+            }
+        }
+
+        /* Mobiles */
+        @media(max-width: 768px) {
+            .main {
+                display: block;
+            }
+
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+            }
+
+            .right img {
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+        @media(max-width: 468px){
+
+            .right img {
+                padding: 10%;
+            }
+        }
+    </style>
+</head>
+
+<h1>This is heading content</h1>
+<div class="main">
+    <div class="left">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus veniam veritatis quis sequi doloremque, quo
+        repellat accusamus ab amet eos ipsam non aliquam voluptatum beatae. Totam cum non laborum magni.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus veniam veritatis quis sequi doloremque, quo
+        repellat accusamus ab amet eos ipsam non aliquam voluptatum beatae. Totam cum non laborum magni.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus veniam veritatis quis sequi doloremque, quo
+        repellat accusamus ab amet eos ipsam non aliquam voluptatum beatae. Totam cum non laborum magni.
+    </div>
+    <div class="right">
+        <img src="beauty.jpg" />
+    </div>
+</div>
+
+</html>

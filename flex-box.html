@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <title>
+        Flex Box
+    </title>
+    <style>
+        @media(min-width: 768px) {
+            .container-1 {
+                display: flex;
+                /* ser alignment verticallyl */
+                /*
+                align-items: flex-start; 
+                align-items: flex-end; 
+                align-items: flex-center; 
+                align-items: flex-strech; by default  
+                */
+
+                /* flex-direction: column; */
+
+            }
+
+            .container-2 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .container-3 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .container-1 div,
+        .container-2 div,
+        .container-3 div {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex: 1;
+            /* set the box sizes of flex box */
+        }
+
+        .box-2 {
+            flex: 2;
+        }
+
+        .box-3 {
+            flex: 1;
+        }
+
+        .container-2-box {
+            /* width: 30%; */
+            flex-basis: 30%;
+        }
+
+        .container-3-box {
+            min-width: 20%;
+            max-width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+
+        <div class="container-2-box">
+            <h3>Container-2 Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Container-2 Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Container-2 Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+
+    </div>
+
+    <div class="container-3">
+
+        <div class="container-3-box">
+            <h3>Container-3 Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Container-3 Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Container-2 Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Container-2 Box Four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Container-2 Box Five</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Container-2 Box Six</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsum! Est, molestias cumque officia
+                obcaecati numquam laboriosam unde temporibus voluptates excepturi optio, fugit sunt alias esse modi
+                voluptatibus quo animi!</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
